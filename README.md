@@ -1,3 +1,4 @@
+
 # Тестовое задание в Compas Pro
 
 Проект реализован в связке Python + DRF + Postgresql + Redis
@@ -40,13 +41,20 @@ docker-compose up --build
 
 http://localhost:8000/ или http://localhost:8000/api/users
 
+
 #### Посмотреть пользователя по id:
 
 http://localhost:8000/api/users/{id}
 
+#### Посмотреть ключ-значение пар Redis:
+
+http://localhost:8000/api/redis
+
+
 #### отправить команду create_users в контейнер:
 
  docker exec <имя_контейнера> python manage.py create_users
+
 
  #### Возможности команды create_users:
 
